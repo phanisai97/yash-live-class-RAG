@@ -1,19 +1,22 @@
 streamlit>=1.35.0
 
-# LangChain
+# Groq SDK and LangChain integration
+groq>=0.30.0
 langchain>=0.3.0
+langchain-core>=0.3.0
 langchain-community>=0.3.0
-langchain-groq>=0.1.6
+langchain-groq>=0.3.0
 langchain-huggingface>=0.1.0
+langchain-text-splitters>=0.3.0
 
 # Vector store
 faiss-cpu>=1.7.4
 
-# Embeddings (sentence-transformer — cached after first download)
+# Embeddings
 sentence-transformers>=3.0.0
 huggingface-hub>=0.24.0
 
-# PyTorch CPU-only (smaller image on Streamlit Cloud)
+# PyTorch CPU-only
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch>=2.3.0
 
@@ -21,3 +24,27 @@ torch>=2.3.0
 pypdf>=4.2.0
 docx2txt>=0.8
 python-pptx>=0.6.23
+
+# streamlit>=1.35.0
+
+# # LangChain
+# langchain>=0.3.0
+# langchain-community>=0.3.0
+# langchain-groq>=0.1.6
+# langchain-huggingface>=0.1.0
+
+# # Vector store
+# faiss-cpu>=1.7.4
+
+# # Embeddings (sentence-transformer — cached after first download)
+# sentence-transformers>=3.0.0
+# huggingface-hub>=0.24.0
+
+# # PyTorch CPU-only (smaller image on Streamlit Cloud)
+# --extra-index-url https://download.pytorch.org/whl/cpu
+# torch>=2.3.0
+
+# # Document loaders
+# pypdf>=4.2.0
+# docx2txt>=0.8
+# python-pptx>=0.6.23
